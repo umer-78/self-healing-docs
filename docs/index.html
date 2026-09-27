@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Self-Healing Docs · Umer Hashmi</title>
+  <meta name="description" content="Finds documentation that a code change made wrong, in the same pull request: replayed over the whole history of httpx.">
+  <link rel="stylesheet" href="kit.css">
+  <style>:root { --accent: #0e7490; --on-accent: #fff; } @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --accent: #67e8f9; --on-accent: #0f0e0c; } }</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="crumb" href="https://umer-78.github.io/">← All projects</a>
+      <h1>Self-Healing Docs</h1>
+      <p class="lede">Docs go stale one commit at a time: a function is removed or a parameter renamed, and the page that shows it is not touched. This checker reads the public API from the code, finds every doc section that uses what just changed, and fails the pull request, suggesting the edit for renames. Below: every breaking change in httpx's history that its docs were using, and what happened to those docs.</p>
+      <div class="links"><a class="btn primary" href="#timeline">See how long docs stayed wrong</a><a class="btn" href="https://github.com/umer-78/self-healing-docs">Code and method</a></div>
+    </header>
+    <main>
+      <section class="kpis" id="kpis"></section>
+      <section class="card" id="timeline">
+        <h2>How long each doc section stayed wrong</h2>
+        <p class="sub" id="tlSub"></p>
+        <div id="gantt"></div>
+        <div id="ganttKey"></div>
+      </section>
+      <section class="card">
+        <h2>Every breaking change the docs used</h2>
+        <p class="sub">Commit links go to httpx on GitHub. A change the maintainers documented in the same commit leaves nothing stale; the checker's job is the rest.</p>
+        <div class="controls"><label for="filter">Show</label><select id="filter"></select></div>
+        <div id="events"></div>
+      </section>
+    </main>
+    <footer>Built by <a href="https://github.com/umer-78">Umer Hashmi</a> · History of <a href="https://github.com/encode/httpx">encode/httpx</a> (BSD-3-Clause), cloned at run time and replayed up to the pinned commit; this page holds only commit ids, API names and doc section titles</footer>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

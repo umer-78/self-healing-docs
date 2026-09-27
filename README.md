@@ -1,5 +1,7 @@
 # self-healing-docs
 
+**Live demo:** https://umer-78.github.io/self-healing-docs/ (how long each of httpx's doc sections stayed wrong after a breaking change)
+
 A GitHub Action that stops a pull request from leaving documentation wrong. It works in four stages:
 
 1. It reads the package's public API from source, as function, class and method signatures, using `ast`.
@@ -63,6 +65,7 @@ Or locally: `python -m heal check --base origin/main --package mypackage` exits 
 pip install -e '.[dev]'
 pytest -q
 python -m heal bench
+python -m heal.demo    # rebuild the live demo's data in docs/
 ```
 
 The replay clones httpx into `~/.cache/heal`; nothing is committed.

@@ -1,0 +1,776 @@
+{
+ "repo": "https://github.com/encode/httpx",
+ "pin": "b5addb64f0161ff6bfe94c124ef76f6a1fba5254",
+ "events": [
+  {
+   "commit": "92fbe5fd87",
+   "time": 1565097648,
+   "change": {
+    "item": "httpx.exceptions:HttpError",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/quickstart.md",
+     "section": "QuickStart > Response Status Codes",
+     "why": "uses HttpError, which was removed",
+     "fixed": true,
+     "commits_later": 17,
+     "days_later": 300.8360763888889
+    }
+   ]
+  },
+  {
+   "commit": "206c5372a6",
+   "time": 1574851422,
+   "change": {
+    "item": "httpx.client:AsyncClient",
+    "kind": "removed"
+   },
+   "used_in": 7,
+   "stale": [
+    {
+     "file": "docs/advanced.md",
+     "section": "Advanced Usage > Support async environments > [asyncio](https://docs.python.org/3/library/asyncio.html) (Default)",
+     "why": "uses AsyncClient, which was removed",
+     "fixed": true,
+     "commits_later": 1,
+     "days_later": 1.0765162037037037
+    },
+    {
+     "file": "docs/advanced.md",
+     "section": "Advanced Usage > Support async environments > [trio](https://github.com/python-trio/trio)",
+     "why": "uses AsyncClient, which was removed",
+     "fixed": true,
+     "commits_later": 1,
+     "days_later": 1.0765162037037037
+    }
+   ]
+  },
+  {
+   "commit": "30229f1652",
+   "time": 1575306424,
+   "change": {
+    "item": "httpx.client:Client",
+    "kind": "parameter removed",
+    "param": "http_versions",
+    "renamed_to": "http_2"
+   },
+   "used_in": 1,
+   "stale": [],
+   "renames": [
+    {
+     "file": "docs/advanced.md",
+     "suggested": true,
+     "matched": false
+    }
+   ]
+  },
+  {
+   "commit": "30229f1652",
+   "time": 1575306424,
+   "change": {
+    "item": "httpx.config:HTTPVersionConfig",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/environment_variables.md",
+     "section": "docs/environment_variables.md",
+     "why": "uses HTTPVersionConfig, which was removed",
+     "fixed": true,
+     "commits_later": 14,
+     "days_later": 1203.7660532407408
+    }
+   ]
+  },
+  {
+   "commit": "5076952202",
+   "time": 1575316349,
+   "change": {
+    "item": "httpx.client:Client",
+    "kind": "parameter removed",
+    "param": "http_2",
+    "renamed_to": "http2"
+   },
+   "used_in": 2,
+   "stale": [],
+   "renames": [
+    {
+     "file": "docs/http2.md",
+     "suggested": true,
+     "matched": true
+    },
+    {
+     "file": "docs/http2.md",
+     "suggested": true,
+     "matched": true
+    }
+   ]
+  },
+  {
+   "commit": "c033ed1b65",
+   "time": 1575459585,
+   "change": {
+    "item": "httpx.config:TimeoutConfig",
+    "kind": "removed"
+   },
+   "used_in": 3,
+   "stale": []
+  },
+  {
+   "commit": "ec40d04382",
+   "time": 1575645609,
+   "change": {
+    "item": "httpx.models:Response.stream_bytes",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/api.md",
+     "section": "Developer Interface > `Response`",
+     "why": "uses Response.stream_bytes, which was removed",
+     "fixed": true,
+     "commits_later": 1,
+     "days_later": 15.04241898148148
+    }
+   ]
+  },
+  {
+   "commit": "ec40d04382",
+   "time": 1575645609,
+   "change": {
+    "item": "httpx.models:Response.stream_text",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/api.md",
+     "section": "Developer Interface > `Response`",
+     "why": "uses Response.stream_text, which was removed",
+     "fixed": true,
+     "commits_later": 1,
+     "days_later": 15.04241898148148
+    }
+   ]
+  },
+  {
+   "commit": "ec40d04382",
+   "time": 1575645609,
+   "change": {
+    "item": "httpx.models:Response.stream_lines",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/api.md",
+     "section": "Developer Interface > `Response`",
+     "why": "uses Response.stream_lines, which was removed",
+     "fixed": true,
+     "commits_later": 1,
+     "days_later": 15.04241898148148
+    }
+   ]
+  },
+  {
+   "commit": "ec40d04382",
+   "time": 1575645609,
+   "change": {
+    "item": "httpx.models:Response.stream_raw",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/api.md",
+     "section": "Developer Interface > `Response`",
+     "why": "uses Response.stream_raw, which was removed",
+     "fixed": true,
+     "commits_later": 1,
+     "days_later": 15.04241898148148
+    }
+   ]
+  },
+  {
+   "commit": "3462999366",
+   "time": 1577633647,
+   "change": {
+    "item": "httpx.models:Response.next",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": []
+  },
+  {
+   "commit": "e284b84bf9",
+   "time": 1577633663,
+   "change": {
+    "item": "httpx.client:Client",
+    "kind": "removed"
+   },
+   "used_in": 21,
+   "stale": [
+    {
+     "file": "docs/advanced.md",
+     "section": "Advanced Usage > Client Instances",
+     "why": "uses Client, which was removed",
+     "fixed": false,
+     "commits_later": 1,
+     "days_later": 9.873229166666667,
+     "restored": true
+    },
+    {
+     "file": "docs/advanced.md",
+     "section": "Advanced Usage > Client Instances > Usage",
+     "why": "uses Client, which was removed",
+     "fixed": false,
+     "commits_later": 1,
+     "days_later": 9.873229166666667,
+     "restored": true
+    },
+    {
+     "file": "docs/advanced.md",
+     "section": "Advanced Usage > Client Instances > Configuration",
+     "why": "uses Client, which was removed",
+     "fixed": false,
+     "commits_later": 1,
+     "days_later": 9.873229166666667,
+     "restored": true
+    },
+    {
+     "file": "docs/advanced.md",
+     "section": "Advanced Usage > .netrc Support",
+     "why": "uses Client, which was removed",
+     "fixed": false,
+     "commits_later": 1,
+     "days_later": 9.873229166666667,
+     "restored": true
+    },
+    {
+     "file": "docs/advanced.md",
+     "section": "Advanced Usage > HTTP Proxying",
+     "why": "uses Client, which was removed",
+     "fixed": false,
+     "commits_later": 1,
+     "days_later": 9.873229166666667,
+     "restored": true
+    },
+    {
+     "file": "docs/advanced.md",
+     "section": "Advanced Usage > SSL certificates > SSL configuration on client instances",
+     "why": "uses Client, which was removed",
+     "fixed": false,
+     "commits_later": 1,
+     "days_later": 9.873229166666667,
+     "restored": true
+    },
+    {
+     "file": "docs/api.md",
+     "section": "Developer Interface > Helper Functions",
+     "why": "uses Client, which was removed",
+     "fixed": false,
+     "restored": true,
+     "commits_later": 1,
+     "days_later": 9.873229166666667
+    },
+    {
+     "file": "docs/compatibility.md",
+     "section": "Requests Compatibility Guide > SSL configuration",
+     "why": "uses Client, which was removed",
+     "fixed": false,
+     "restored": true,
+     "commits_later": 1,
+     "days_later": 9.873229166666667
+    }
+   ]
+  },
+  {
+   "commit": "53804173bb",
+   "time": 1582836138,
+   "change": {
+    "item": "httpx._client:AsyncClient",
+    "kind": "parameter removed",
+    "param": "backend",
+    "renamed_to": null
+   },
+   "used_in": 1,
+   "stale": []
+  },
+  {
+   "commit": "3046e920ea",
+   "time": 1586349130,
+   "change": {
+    "item": "httpx._client:AsyncClient",
+    "kind": "parameter removed",
+    "param": "uds",
+    "renamed_to": null
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/async.md",
+     "section": "Async Support > Unix Domain Sockets",
+     "why": "passes uds= to AsyncClient(), which no longer takes it",
+     "fixed": true,
+     "commits_later": 2,
+     "days_later": 52.25769675925926
+    }
+   ]
+  },
+  {
+   "commit": "3046e920ea",
+   "time": 1586349130,
+   "change": {
+    "item": "httpx._dispatch.connection:HTTPConnection",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/environment_variables.md",
+     "section": "docs/environment_variables.md",
+     "why": "uses HTTPConnection, which was removed",
+     "fixed": true,
+     "commits_later": 9,
+     "days_later": 1075.9569560185184
+    }
+   ]
+  },
+  {
+   "commit": "3046e920ea",
+   "time": 1586349130,
+   "change": {
+    "item": "httpx._exceptions:TimeoutException",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/advanced.md",
+     "section": "Advanced Usage > Timeout Configuration",
+     "why": "uses TimeoutException, which was removed",
+     "fixed": false,
+     "commits_later": 1,
+     "days_later": 86.05833333333334,
+     "restored": true
+    }
+   ]
+  },
+  {
+   "commit": "3046e920ea",
+   "time": 1586349130,
+   "change": {
+    "item": "httpx._exceptions:ConnectTimeout",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/advanced.md",
+     "section": "Advanced Usage > Timeout Configuration > Fine tuning the configuration",
+     "why": "uses ConnectTimeout, which was removed",
+     "fixed": false,
+     "commits_later": 1,
+     "days_later": 86.05833333333334,
+     "restored": true
+    }
+   ]
+  },
+  {
+   "commit": "3046e920ea",
+   "time": 1586349130,
+   "change": {
+    "item": "httpx._exceptions:ReadTimeout",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/advanced.md",
+     "section": "Advanced Usage > Timeout Configuration > Fine tuning the configuration",
+     "why": "uses ReadTimeout, which was removed",
+     "fixed": false,
+     "commits_later": 1,
+     "days_later": 86.05833333333334,
+     "restored": true
+    }
+   ]
+  },
+  {
+   "commit": "3046e920ea",
+   "time": 1586349130,
+   "change": {
+    "item": "httpx._exceptions:WriteTimeout",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/advanced.md",
+     "section": "Advanced Usage > Timeout Configuration > Fine tuning the configuration",
+     "why": "uses WriteTimeout, which was removed",
+     "fixed": false,
+     "commits_later": 1,
+     "days_later": 86.05833333333334,
+     "restored": true
+    }
+   ]
+  },
+  {
+   "commit": "3046e920ea",
+   "time": 1586349130,
+   "change": {
+    "item": "httpx._exceptions:PoolTimeout",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/advanced.md",
+     "section": "Advanced Usage > Timeout Configuration > Fine tuning the configuration",
+     "why": "uses PoolTimeout, which was removed",
+     "fixed": false,
+     "commits_later": 1,
+     "days_later": 86.05833333333334,
+     "restored": true
+    }
+   ]
+  },
+  {
+   "commit": "247ee0dc49",
+   "time": 1595494485,
+   "change": {
+    "item": "httpx._models:Origin",
+    "kind": "removed"
+   },
+   "used_in": 2,
+   "stale": [
+    {
+     "file": "docs/environment_variables.md",
+     "section": "docs/environment_variables.md",
+     "why": "uses Origin, which was removed",
+     "fixed": true,
+     "commits_later": 9,
+     "days_later": 970.1079398148148
+    }
+   ]
+  },
+  {
+   "commit": "8fa87650b2",
+   "time": 1599252996,
+   "change": {
+    "item": "httpx._transports.urllib3:URLLib3Transport",
+    "kind": "removed"
+   },
+   "used_in": 3,
+   "stale": [
+    {
+     "file": "docs/advanced.md",
+     "section": "Advanced Usage > Custom Transports > urllib3 transport",
+     "why": "uses URLLib3Transport, which was removed",
+     "fixed": true,
+     "commits_later": 35,
+     "days_later": 1227.5363425925925
+    }
+   ]
+  },
+  {
+   "commit": "fbb21fb1ae",
+   "time": 1600414869,
+   "change": {
+    "item": "httpx._exceptions:RequestBodyUnavailable",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": []
+  },
+  {
+   "commit": "f932af9172",
+   "time": 1600771468,
+   "change": {
+    "item": "httpx._config:Limits",
+    "kind": "parameter removed",
+    "param": "max_keepalive",
+    "renamed_to": null
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/advanced.md",
+     "section": "Advanced Usage > Pool limit configuration",
+     "why": "passes max_keepalive= to Limits(), which no longer takes it",
+     "fixed": true,
+     "commits_later": 1,
+     "days_later": 0.9568634259259259
+    }
+   ]
+  },
+  {
+   "commit": "0eed6a3734",
+   "time": 1601992387,
+   "change": {
+    "item": "httpx._exceptions:NotRedirectResponse",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": []
+  },
+  {
+   "commit": "0eed6a3734",
+   "time": 1601992387,
+   "change": {
+    "item": "httpx._models:Response.next",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/api.md",
+     "section": "Developer Interface > `Response`",
+     "why": "uses Response.next, which was removed",
+     "fixed": false
+    }
+   ]
+  },
+  {
+   "commit": "0eed6a3734",
+   "time": 1601992387,
+   "change": {
+    "item": "httpx._models:Response.anext",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/api.md",
+     "section": "Developer Interface > `Response`",
+     "why": "uses Response.anext, which was removed",
+     "fixed": false
+    }
+   ]
+  },
+  {
+   "commit": "9b8f5af759",
+   "time": 1618998695,
+   "change": {
+    "item": "httpx._exceptions:ResponseClosed",
+    "kind": "removed"
+   },
+   "used_in": 1,
+   "stale": []
+  },
+  {
+   "commit": "77246617ca",
+   "time": 1628850896,
+   "change": {
+    "item": "httpx._config:Proxy",
+    "kind": "parameter removed",
+    "param": "mode",
+    "renamed_to": null
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/advanced.md",
+     "section": "Advanced Usage > HTTP Proxying > Proxy mechanisms > Forcing the proxy mechanism",
+     "why": "passes mode= to Proxy(), which no longer takes it",
+     "fixed": true,
+     "commits_later": 4,
+     "days_later": 159.1829050925926
+    }
+   ]
+  },
+  {
+   "commit": "47266d763b",
+   "time": 1631535682,
+   "change": {
+    "item": "httpx._api:get",
+    "kind": "parameter removed",
+    "param": "allow_redirects",
+    "renamed_to": "follow_redirects"
+   },
+   "used_in": 2,
+   "stale": [],
+   "renames": [
+    {
+     "file": "docs/quickstart.md",
+     "suggested": true,
+     "matched": true
+    },
+    {
+     "file": "docs/quickstart.md",
+     "suggested": true,
+     "matched": true
+    }
+   ]
+  },
+  {
+   "commit": "47266d763b",
+   "time": 1631535682,
+   "change": {
+    "item": "httpx._client:Client.send",
+    "kind": "parameter removed",
+    "param": "allow_redirects",
+    "renamed_to": "follow_redirects"
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/compatibility.md",
+     "section": "Requests Compatibility Guide > Determining the next redirect request",
+     "why": "passes allow_redirects= to send(), which no longer takes it",
+     "fixed": false
+    }
+   ],
+   "renames": [
+    {
+     "file": "docs/compatibility.md",
+     "suggested": true,
+     "matched": false
+    }
+   ]
+  },
+  {
+   "commit": "47266d763b",
+   "time": 1631535682,
+   "change": {
+    "item": "httpx._client:Client.get",
+    "kind": "parameter removed",
+    "param": "allow_redirects",
+    "renamed_to": "follow_redirects"
+   },
+   "used_in": 2,
+   "stale": [],
+   "renames": [
+    {
+     "file": "docs/quickstart.md",
+     "suggested": true,
+     "matched": true
+    },
+    {
+     "file": "docs/quickstart.md",
+     "suggested": true,
+     "matched": true
+    }
+   ]
+  },
+  {
+   "commit": "47266d763b",
+   "time": 1631535682,
+   "change": {
+    "item": "httpx._client:AsyncClient.send",
+    "kind": "parameter removed",
+    "param": "allow_redirects",
+    "renamed_to": "follow_redirects"
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/compatibility.md",
+     "section": "Requests Compatibility Guide > Determining the next redirect request",
+     "why": "passes allow_redirects= to send(), which no longer takes it",
+     "fixed": false
+    }
+   ],
+   "renames": [
+    {
+     "file": "docs/compatibility.md",
+     "suggested": true,
+     "matched": false
+    }
+   ]
+  },
+  {
+   "commit": "47266d763b",
+   "time": 1631535682,
+   "change": {
+    "item": "httpx._client:AsyncClient.get",
+    "kind": "parameter removed",
+    "param": "allow_redirects",
+    "renamed_to": "follow_redirects"
+   },
+   "used_in": 2,
+   "stale": [],
+   "renames": [
+    {
+     "file": "docs/quickstart.md",
+     "suggested": true,
+     "matched": true
+    },
+    {
+     "file": "docs/quickstart.md",
+     "suggested": true,
+     "matched": true
+    }
+   ]
+  },
+  {
+   "commit": "61188feeae",
+   "time": 1636986654,
+   "change": {
+    "item": "httpx._transports.default:AsyncHTTPTransport",
+    "kind": "parameter removed",
+    "param": "backend",
+    "renamed_to": null
+   },
+   "used_in": 1,
+   "stale": [
+    {
+     "file": "docs/async.md",
+     "section": "Async Support > Supported async environments > [AnyIO](https://github.com/agronholm/anyio)",
+     "why": "passes backend= to AsyncHTTPTransport(), which no longer takes it",
+     "fixed": true,
+     "commits_later": 1,
+     "days_later": 55.79744212962963
+    }
+   ]
+  },
+  {
+   "commit": "1805ee0d22",
+   "time": 1731411102,
+   "change": {
+    "item": "httpx._api:get",
+    "kind": "parameter removed",
+    "param": "ssl_context",
+    "renamed_to": null
+   },
+   "used_in": 3,
+   "stale": []
+  },
+  {
+   "commit": "1805ee0d22",
+   "time": 1731411102,
+   "change": {
+    "item": "httpx._client:Client",
+    "kind": "parameter removed",
+    "param": "ssl_context",
+    "renamed_to": null
+   },
+   "used_in": 3,
+   "stale": []
+  },
+  {
+   "commit": "1805ee0d22",
+   "time": 1731411102,
+   "change": {
+    "item": "httpx._config:SSLContext",
+    "kind": "removed"
+   },
+   "used_in": 7,
+   "stale": [
+    {
+     "file": "docs/logging.md",
+     "section": "Logging",
+     "why": "uses SSLContext, which was removed",
+     "fixed": false
+    }
+   ]
+  }
+ ],
+ "pin_time": 1771843242
+}
