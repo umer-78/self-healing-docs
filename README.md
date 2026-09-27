@@ -1,5 +1,7 @@
 # self-healing-docs
 
+[![Self-Healing Docs: the live demo](.github/preview.jpg)](https://umer-78.github.io/self-healing-docs/)
+
 **Live demo:** https://umer-78.github.io/self-healing-docs/ (how long each of httpx's doc sections stayed wrong after a breaking change)
 
 A GitHub Action that stops a pull request from leaving documentation wrong. It works in four stages:
