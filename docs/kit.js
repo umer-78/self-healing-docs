@@ -55,6 +55,7 @@ export function bars(el, rows, opts = {}) {
   const max = opts.max ?? Math.max(...rows.map((r) => Math.abs(r.value)), 1e-9);
   const fmt = opts.fmt || ((v) => String(v));
   el.classList.add('bars');
+  el.style.setProperty('--valw', `${Math.min(9, Math.max(4.5, ...rows.map((r) => String(r.text ?? fmt(r.value)).length * 0.62 + 0.4)))}em`);
   el.innerHTML = rows.map((r) => `<div class="bar${r.dim ? ' dim' : ''}" title="${esc(r.title || r.label)}"><span class="name">${esc(r.label)}</span>` +
     `<span class="track"><span class="fill" style="display:block;width:${Math.max(0, Math.min(100, (100 * Math.abs(r.value)) / max)).toFixed(2)}%;--c:${r.color || 'var(--accent)'}"></span></span>` +
     `<span class="val">${esc(r.text ?? fmt(r.value))}</span></div>`).join('');
@@ -178,6 +179,7 @@ export function diverge(el, rows, opts = {}) {
   const max = opts.max ?? Math.max(...rows.map((r) => Math.abs(r.value)), 1e-9);
   const fmt = opts.fmt || ((v) => String(v));
   el.classList.add('bars');
+  el.style.setProperty('--valw', `${Math.min(9, Math.max(4.5, ...rows.map((r) => String(r.text ?? fmt(r.value)).length * 0.62 + 0.4)))}em`);
   el.innerHTML = rows.map((r) => {
     const w = Math.min(50, (50 * Math.abs(r.value)) / max);
     const c = r.color || (r.value < 0 ? 'var(--bad)' : 'var(--good)');
