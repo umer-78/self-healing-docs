@@ -1,5 +1,7 @@
 # self-healing-docs
 
+[![CI](https://github.com/umer-78/self-healing-docs/actions/workflows/ci.yml/badge.svg)](https://github.com/umer-78/self-healing-docs/actions/workflows/ci.yml)
+
 [![Self-Healing Docs: the live demo](.github/preview.jpg)](https://umer-78.github.io/self-healing-docs/)
 
 **Live demo:** https://umer-78.github.io/self-healing-docs/ (how long each of httpx's doc sections stayed wrong after a breaking change)
@@ -71,3 +73,7 @@ python -m heal.demo    # rebuild the live demo's data in docs/
 ```
 
 The replay clones httpx into `~/.cache/heal`; nothing is committed.
+
+## Licence
+
+MIT licence (see [LICENSE](LICENSE)). The data it evaluates (the httpx repository (BSD-3-Clause)) keeps its own licence and is downloaded when you run it.
