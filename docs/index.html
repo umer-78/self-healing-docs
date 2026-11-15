@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en" data-scene="docs">
+<html lang="en" data-scene="heal" data-look="lora" data-hero="center" data-card="solid" data-motif="diag" data-backdrop="stars">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Self-Healing Docs · Umer Hashmi</title>
   <meta name="description" content="Finds documentation that a code change made wrong, in the same pull request: replayed over the whole history of httpx.">
-  <meta name="theme-color" content="#0e7490">
+  <meta name="theme-color" content="#47841b">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Umer Hashmi · projects">
   <meta property="og:title" content="Self-Healing Docs · Umer Hashmi">
@@ -16,10 +16,15 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" id="fx-fonts">
   <link rel="stylesheet" href="kit.css">
   <link rel="stylesheet" href="fx.css">
   <style>:root { --accent: #0e7490; --fx-2: #8b5cf6; --fx-3: #f59e0b; --on-accent: #fff; } @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --accent: #67e8f9; --on-accent: #0f0e0c; } }</style>
+<style id="fx-look">:root[data-look] { --font: 'Inter', system-ui, -apple-system, "Segoe UI", sans-serif; --fx-display: 'Lora', Georgia, serif; --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; --fx-display-weight: 700; --fx-tracking: -0.015em; --fx-title-case: none; --fx-radius: 20px; --fx-hero-radius: 30px; --fx-control-radius: 999px; --accent: #47841b; --accent-hover: #39710a; --accent-soft: #e9f7e3; --accent-glow: rgb(71 132 27 / 0.16); --on-accent: #ffffff; --fx-2: #3a86e4; --fx-3: #aba31d; --bg: #f6fbf4; --bg-elevated: #fcfefb; --surface: #fdfffc; --surface-2: #eff6ec; --surface-3: #e7eee3; --border: #d9e1d5; --border-strong: #bfc7ba; --line: #d9e1d5; }
+@media (prefers-color-scheme: dark) { :root[data-look]:not([data-theme="light"]) { --accent: #71ad4f; --accent-hover: #88be6b; --accent-soft: rgb(113 173 79 / 0.14); --accent-glow: rgb(113 173 79 / 0.2); --on-accent: #0c1507; --fx-2: #7ab4fe; --fx-3: #cbc34a; --bg: #0b1208; --bg-elevated: #12180e; --surface: #151c11; --surface-2: #1d2419; --surface-3: #262e22; --border: #2c3329; --border-strong: #3e453a; --line: #2c3329; } }
+:root[data-look][data-theme="dark"] { --accent: #71ad4f; --accent-hover: #88be6b; --accent-soft: rgb(113 173 79 / 0.14); --accent-glow: rgb(113 173 79 / 0.2); --on-accent: #0c1507; --fx-2: #7ab4fe; --fx-3: #cbc34a; --bg: #0b1208; --bg-elevated: #12180e; --surface: #151c11; --surface-2: #1d2419; --surface-3: #262e22; --border: #2c3329; --border-strong: #3e453a; --line: #2c3329; }</style>
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.min.js" data-fx>
+<link rel="modulepreload" href="fx3d.js" data-fx>
 </head>
 <body>
   <div class="wrap">
