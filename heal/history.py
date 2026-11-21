@@ -2,7 +2,6 @@
 sections that left stale; and, replaying a project's history, what happened to them after."""
 import os
 import subprocess
-from pathlib import Path
 
 from .code import api, changes, short
 from .docs import calls, heal, sections, stale
