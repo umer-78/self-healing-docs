@@ -25,6 +25,9 @@
 :root[data-look][data-theme="dark"] { --accent: #71ad4f; --accent-hover: #88be6b; --accent-soft: rgb(113 173 79 / 0.14); --accent-glow: rgb(113 173 79 / 0.2); --on-accent: #0c1507; --fx-2: #7ab4fe; --fx-3: #cbc34a; --bg: #0b1208; --bg-elevated: #12180e; --surface: #151c11; --surface-2: #1d2419; --surface-3: #262e22; --border: #2c3329; --border-strong: #3e453a; --line: #2c3329; }</style>
 <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.min.js" data-fx>
 <link rel="modulepreload" href="fx3d.js" data-fx>
+<link rel="canonical" href="https://umer-78.github.io/self-healing-docs/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2347841b'/><text x='16' y='22' font-size='17' text-anchor='middle' fill='white' font-family='system-ui,sans-serif' font-weight='700'>S</text></svg>">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Self-Healing Docs · Umer Hashmi", "url": "https://umer-78.github.io/self-healing-docs/", "applicationCategory": "DeveloperApplication", "operatingSystem": "Any (runs in a web browser)", "isAccessibleForFree": true, "author": {"@type": "Person", "name": "Umer Hashmi", "url": "https://umer-78.github.io/"}, "description": "Finds documentation that a code change made wrong, in the same pull request: replayed over the whole history of httpx.", "image": "https://umer-78.github.io/self-healing-docs/og.jpg", "sameAs": "https://github.com/umer-78/self-healing-docs"}</script>
 </head>
 <body>
   <div class="wrap">
@@ -34,7 +37,7 @@
       <h1>Self-Healing Docs</h1>
       <p class="lede">Docs go stale one commit at a time: a function is removed or a parameter renamed, and the page that shows it is not touched. This checker reads the public API from the code, finds every doc section that uses what just changed, and fails the pull request, suggesting the edit for renames. Below: every breaking change in httpx's history that its docs were using, and what happened to those docs.</p>
       <div class="links"><a class="btn primary" href="#timeline">See how long docs stayed wrong</a><a class="btn" href="https://github.com/umer-78/self-healing-docs">Code and method</a></div>
-      <div class="fx-tags" aria-hidden="true"><div><span>python</span><span>github-actions</span><span>documentation</span><span>ast</span><span>git</span><span>ci</span><span>python</span><span>github-actions</span><span>documentation</span><span>ast</span><span>git</span><span>ci</span></div></div>
+      <div class="fx-tags"><div><span>python</span><span>github-actions</span><span>documentation</span><span>ast</span><span>git</span><span>ci</span></div></div>
     </header>
     <main>
       <section class="kpis" id="kpis"></section>
